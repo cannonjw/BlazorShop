@@ -1,0 +1,20 @@
+@page "/ParentComponent"
+
+<h1 class="text-danger">Parent Child Component</h1>
+
+<ChildComponent 
+    OnClickMethod="@ShowMessage" 
+    Title="This is passed from the Parent">
+    This content is displayed between the child and the parent.
+</ChildComponent>
+
+<p><b>@messageText</b></p>
+
+@code {
+    private string messageText;
+
+    private void ShowMessage()
+    {
+        messageText = "Blazzing text from Parent!";
+    }
+}
