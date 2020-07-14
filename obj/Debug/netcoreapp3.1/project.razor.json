@@ -365,6 +365,55 @@
       },
       {
         "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.CategoryPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CategoryPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.CategoryPage"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.CategoryPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.CategoryPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.CategoryPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "BlazorShop.Pages.Components.ChildComponent",
         "AssemblyName": "BlazorShop",
         "Documentation": null,
@@ -697,6 +746,55 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorShop.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.ProductPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProductPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.ProductPage"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.ProductPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.ProductPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.ProductPage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1055,6 +1153,171 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorShop.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorInputFile.InputFile",
+        "AssemblyName": "BlazorInputFile",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "InputFile",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UnmatchedParameters",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "UnmatchedParameters"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<BlazorInputFile.IFileListEntry[]>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MaxMessageSize",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "MaxMessageSize"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MaxBufferSize",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "MaxBufferSize"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorInputFile.InputFile"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorInputFile.InputFile",
+        "AssemblyName": "BlazorInputFile",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorInputFile.InputFile",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UnmatchedParameters",
+            "TypeName": "System.Collections.Generic.Dictionary<System.String, System.Object>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "UnmatchedParameters"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnChange",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<BlazorInputFile.IFileListEntry[]>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnChange",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MaxMessageSize",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "MaxMessageSize"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MaxBufferSize",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "MaxBufferSize"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorInputFile.InputFile",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -21593,6 +21856,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/CategoryPage.razor",
+      "TargetPath": "Pages\\CategoryPage.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/Shared/LoginDisplay.razor",
       "TargetPath": "Shared\\LoginDisplay.razor",
       "FileKind": "component"
@@ -21640,6 +21908,11 @@
     {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Learn Blazor/LearnAdvancedRouting.razor",
       "TargetPath": "Pages\\Learn Blazor\\LearnAdvancedRouting.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/ProductPage.razor",
+      "TargetPath": "Pages\\ProductPage.razor",
       "FileKind": "component"
     },
     {

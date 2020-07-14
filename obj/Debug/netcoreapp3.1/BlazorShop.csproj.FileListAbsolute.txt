@@ -119,3 +119,8 @@
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/ParentComponent.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ChildComponent.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ParentComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/CategoryPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/CategoryPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/ProductPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/ProductPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorInputFile.dll

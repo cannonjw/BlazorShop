@@ -1,0 +1,188 @@
+@page "/product"
+@using BlazorShop.Models
+@using BlazorShop.Services
+@using BlazorInputFile
+@using System.IO;
+
+@inherits OwningComponentBase<ProductService>
+
+@if (products == null)
+{
+    <p><em>Loading or No categories exist</em></p>
+} else
+{
+    <div class="container border p-3">
+        <div class="row">
+            <div class="col-5">
+                <h3 class="text-info">Category List</h3>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-info form-control" @onclick="AddNewProduct">
+                    Add New Product
+                </button>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var product in products)
+                    {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>
+                            <button class="btn btn-primary" style="width: 150px" @onclick="(() => EditProduct(product))">
+                                Edit
+                            </button>
+                        </td>
+                    </tr>
+                        
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@if (ShowPopUp) {
+<div class="modal" tabindex="-1" style="display:block" role="dialog">
+    <EditForm Model="@objProduct" OnValidSubmit="@ValidSubmit">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-info">@(objProduct.Id != 0 ? "Update" : "Create")</h3>
+                    <button type="button" class="close" @onclick="ClosePopUp">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Product Name
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="objProduct.Name" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="offset-4 col">
+                                    <button class="btn btn-primary form-control" type="submit">Submit</button>
+                                </div>
+                                @if (objProduct.Id > 0)
+                                {
+                                    <div class="col">
+                                        <button class="btn btn-danger form-control"
+                                                @onclick="DeleteProduct"
+                                                type="submit">Delete</button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+    </div>
+
+}
+
+@code {
+    List<Category> categories;
+    List<Product> products;
+    bool ShowPopUp = false;
+    Product objProduct = new Product();
+    public byte[] ImageUploaded { get; set; }
+
+    protected override void OnInitialized()
+    {
+        products = Service.GetProducts();
+    }
+
+    void AddNewProduct()
+    {
+        objProduct = new Product();
+        categories = Service.GetCategoryList();
+        objProduct.CategoryId = categories.ToList()[0].Id;
+        objProduct.Id = 0;
+        ShowPopUp = true;
+    }
+
+    void EditProduct(Product product)
+    {
+        objProduct = product;
+        categories = Service.GetCategoryList();
+        ShowPopUp = true;
+    }
+
+    void DeleteProduct()
+    {
+        ShowPopUp = false;
+        var result = Service.DeleteProduct(objProduct);
+        products.Clear();
+        products = Service.GetProducts();
+    }
+    void ClosePopUp()
+    {
+        ShowPopUp = false;
+    }
+
+    void ValidSubmit()
+    {
+        var result = false;
+        ShowPopUp = false;
+        if (ImageUploaded != null)
+        {
+            objProduct.Image = ImageUploaded;
+            ImageUploaded = null;
+        }
+
+        if (objProduct.Id > 0)
+        {
+            result = Service.UpdateProduct(objProduct);
+        } else
+        {
+            result = Service.CreateProduct(objProduct);
+
+        }
+
+        products = Service.GetProducts();
+    }
+
+    async Task HandleSelection(IFileListEntry[] files) 
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var ms = new MemoryStream();
+            await file.Data.CopyToAsync(ms);
+            ImageUploaded = ms.ToArray();
+        }
+    }
+
+    string convertImageToDisplay(byte[] image)
+    {
+        if (image != null)
+        {
+            var base64 = Convert.ToBase64String(image);
+            var finalStr = string.Format("data:image/jpg;base64,{0}", base64);
+            return finalStr;
+        }
+
+        return "";
+    }
+
+    
+
+}
