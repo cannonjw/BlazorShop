@@ -72,10 +72,17 @@
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.MvcApplicationPartsAssemblyInfo.cache
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.RazorComponent.input.cache
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/App.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/CategoryPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/ChildComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/ParentComponent.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Error.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Index.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/Counter.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/FetchData.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnAdvancedRouting.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnBlazor.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnRouting.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/ProductPage.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/LoginDisplay.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/MainLayout.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Shared/NavMenu.razor.g.cs
@@ -86,10 +93,17 @@
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.TagHelpers.output.cache
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.RazorCoreGenerate.cache
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/App.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/CategoryPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ChildComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ParentComponent.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Error.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Index.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/Counter.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/FetchData.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnAdvancedRouting.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnBlazor.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnRouting.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/ProductPage.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Shared/LoginDisplay.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Shared/MainLayout.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Shared/NavMenu.razor.g.cs
@@ -109,18 +123,4 @@
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.dll
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.pdb
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.genruntimeconfig.cache
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnBlazor.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnBlazor.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnRouting.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnRouting.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Learn Blazor/LearnAdvancedRouting.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Learn Blazor/LearnAdvancedRouting.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/ChildComponent.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/ParentComponent.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ChildComponent.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/ParentComponent.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/CategoryPage.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/CategoryPage.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/ProductPage.razor.g.cs
-/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/ProductPage.razor.g.cs
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorInputFile.dll
