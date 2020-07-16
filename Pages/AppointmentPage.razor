@@ -1,0 +1,217 @@
+@page "/appointments"
+
+@using BlazorShop.Models
+@using BlazorShop.Services
+@using BlazorInputFile
+@using System.IO
+
+@inherits OwningComponentBase<AppointmentService>
+
+<AuthorizeView>
+    <Authorized>
+
+        @if (appointments == null)
+        {
+            <p><em>Loading...</em></p>
+        } else
+        {
+            <div class="container border p-3">
+                <div class="row">
+                    <div class="col-5">
+                        <h3 class="text-info">Appointment List</h3>
+                    </div>
+                    <div class="col-3">
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Product Name</th>
+                                <th>Date</th>
+                                <th>Confirmed</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var appointment in appointments)
+                            {
+                                <tr>
+                                    <td>@appointment.CustomerName</td>
+                                    <td>@appointment.CustomerEmail</td>
+                                    <td>@appointment.CustomerPhone</td>
+                                    <td>@appointment.AppointmentDate.ToShortDateString()</td>
+                                    <td>@appointment.Product.Name</td>
+                                    <td><input type="checkbox" checked="@(appointment.IsConfirmed)" class="form-control" disabled></td>
+                                    <td>
+                                        <button class="btn btn-primary" style="width: 150px" @onclick="(() => EditAppointment(appointment))">
+                                            Edit
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </Authorized>
+    <NotAuthorized>
+        <p><h3>You are not signed in.</h3></p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@if (ShowPopUp) {
+<div class="modal" tabindex="-1" style="display:block" role="dialog">
+    <EditForm Model="@_appointment" OnValidSubmit="@ValidSubmit">
+        
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-info">Edit Appointment</h3>
+                    <button type="button" class="close" @onclick="ClosePopUp">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <DataAnnotationsValidator />
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Name
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="_appointment.CustomerName" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Email
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="_appointment.CustomerEmail" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Phone
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="_appointment.CustomerPhone" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Product
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="_appointment.Product.Name" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Date
+                                </div>
+                                <div class="col-8">
+                                    <input class="form-control" type="text" @bind="_appointment.AppointmentDate" />
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    <button class="btn btn-success form-control" type="submit">Confirm!</button>
+                                </div>
+                                <div class="col-8">
+                                    <button class="btn btn-danger form-control" @onclick="DeleteAppointment">
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            @if (_appointment.Product.Image != null)
+                            {
+                                <img src="@convertImageToDisplay(_appointment.Product.Image)" width="100%">
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+    </div>
+
+}
+
+@code {
+    List<Appointment> appointments;
+    Appointment _appointment = new Appointment();
+    public byte[] ImageUploaded { get; set; }
+    bool ShowPopUp = false;
+    protected override void OnInitialized()
+    {
+        appointments = Service.GetAppointments();
+    }
+
+    void EditAppointment(Appointment appointment)
+    {
+        _appointment = appointment;
+        ShowPopUp = true;
+    }
+
+    void DeleteAppointment()
+    {
+        ShowPopUp = false;
+        var result = Service.DeleteAppointment(_appointment);
+        appointments.Clear();
+        appointments = Service.GetAppointments();
+    }
+    void ClosePopUp()
+    {
+        ShowPopUp = false;
+    }
+
+    void ValidSubmit()
+    {
+        var result = false;
+        ShowPopUp = false;
+        result = Service.ConfirmAppointment(_appointment);
+        
+    }
+
+    async Task HandleSelection(IFileListEntry[] files) 
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var ms = new MemoryStream();
+            await file.Data.CopyToAsync(ms);
+            ImageUploaded = ms.ToArray();
+        }
+    }
+    string convertImageToDisplay(byte[] image)
+    {
+        if (image != null)
+        {
+            var base64 = Convert.ToBase64String(image);
+            var finalStr = string.Format("data:image/jpg;base64,{0}", base64);
+            return finalStr;
+        }
+
+        return "";
+    }
+    void CategorySelectionChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value.ToString(), out int id))
+        {
+            _appointment.Product.CategoryId = id;
+        }
+    }
+
+    
+
+}

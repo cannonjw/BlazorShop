@@ -1,0 +1,43 @@
+@page "/details/{ProductId:int}"
+@using BlazorShop.Models
+@using BlazorShop.Services
+
+@inherits OwningComponentBase<ProductService>
+
+<br />
+<h2 class="text-info">@(ShowAppointment? "Book Appointment" : "Product Details")</h2>
+@if (ShowAppointment)
+{
+    <BlazorShop.Pages.Components.AppointmentComponent OnClickShowDetails="OnClickShowDetails" appointment="appointment"></BlazorShop.Pages.Components.AppointmentComponent>
+} else
+{
+    <BlazorShop.Pages.Components.DetailsComponent OnClickShowAppointment="OnClickShowAppointment" appointment="appointment"></BlazorShop.Pages.Components.DetailsComponent>
+}
+
+@code {
+    [Parameter]
+    public int ProductId { get; set; }
+    public Appointment appointment { get; set; }
+    bool ShowAppointment = false;
+
+    protected override void OnInitialized()
+    {
+        appointment = new Appointment()
+        {
+            AppointmentDate = DateTime.Now
+        };
+        appointment.Product = Service.GetProduct(ProductId);
+
+    }
+
+    void OnClickShowAppointment()
+    {
+        ShowAppointment = true;
+    }
+
+    void OnClickShowDetails()
+    {
+        ShowAppointment = false;
+    }
+
+}

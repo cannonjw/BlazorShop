@@ -25,6 +25,7 @@
       "BlazorShop/1.0.0": {
         "dependencies": {
           "BlazorInputFile": "0.2.0",
+          "Microsoft.AspNetCore.Components.Analyzers": "3.1.0-preview3.19555.2",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
           "Microsoft.AspNetCore.Identity.UI": "3.1.5",

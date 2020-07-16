@@ -3,10 +3,23 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlazorShop.Data.Migrations
 {
-    public partial class AddedProduct : Migration
+    public partial class CreateProduct_Categories : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
@@ -16,7 +29,7 @@ namespace BlazorShop.Data.Migrations
                     Name = table.Column<string>(nullable: false),
                     Price = table.Column<double>(nullable: false),
                     Image = table.Column<byte[]>(nullable: true),
-                    ShadeColor = table.Column<string>(nullable: true),
+                    ShadeColor = table.Column<string>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -40,6 +53,9 @@ namespace BlazorShop.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
         }
     }
 }

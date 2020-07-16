@@ -16,6 +16,40 @@ namespace BlazorShop.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.5");
 
+            modelBuilder.Entity("BlazorShop.Models.Appointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("AppointmentDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CustomerEmail")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CustomerPhone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("BlazorShop.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -51,6 +85,7 @@ namespace BlazorShop.Data.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("ShadeColor")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -254,6 +289,15 @@ namespace BlazorShop.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("BlazorShop.Models.Appointment", b =>
+                {
+                    b.HasOne("BlazorShop.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BlazorShop.Models.Product", b =>

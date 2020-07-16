@@ -2,7 +2,6 @@
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/appsettings.json
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorShop.StaticWebAssets.xml
-/home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/app.db
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorShop
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorShop.deps.json
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorShop.runtimeconfig.json
@@ -124,3 +123,16 @@
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.pdb
 /home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/BlazorShop.genruntimeconfig.cache
 /home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/BlazorInputFile.dll
+/home/cannonjw/Projects/BlazorShop/bin/Debug/netcoreapp3.1/app.db
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/IndividualProduct.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/IndividualProduct.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/AppointmentComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Components/DetailsComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Details.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/AppointmentComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Components/DetailsComponent.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/Details.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/AppointmentBooked.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/AppointmentBooked.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/AppointmentPage.razor.g.cs
+/home/cannonjw/Projects/BlazorShop/obj/Debug/netcoreapp3.1/Razor/Pages/AppointmentPage.razor.g.cs

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorShop.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200714174937_AddedProduct")]
-    partial class AddedProduct
+    [Migration("20200715161809_CreateProduct_Categories")]
+    partial class CreateProduct_Categories
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,6 +53,7 @@ namespace BlazorShop.Data.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("ShadeColor")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

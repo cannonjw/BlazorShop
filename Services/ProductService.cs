@@ -19,7 +19,7 @@ namespace BlazorShop.Services
 
         public Product GetProduct(int productId)
         {
-            return _db.Products.FirstOrDefault(u => u.Id == productId);
+            return _db.Products.Include(x => x.Category).FirstOrDefault(u => u.Id == productId);
         }
 
         public List<Category> GetCategoryList()

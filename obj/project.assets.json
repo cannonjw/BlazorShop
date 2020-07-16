@@ -52,7 +52,7 @@
       "Microsoft.AspNetCore.Components.Analyzers/3.1.0-preview3.19555.2": {
         "type": "package",
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.props": {}
         }
       },
       "Microsoft.AspNetCore.Components.Forms/3.1.0-preview3.19555.2": {
@@ -1814,6 +1814,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "BlazorInputFile >= 0.2.0",
+      "Microsoft.AspNetCore.Components.Analyzers >= 3.1.0-preview3.19555.2",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.5",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.5",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.5",
@@ -1859,6 +1860,10 @@
           "BlazorInputFile": {
             "target": "Package",
             "version": "[0.2.0, )"
+          },
+          "Microsoft.AspNetCore.Components.Analyzers": {
+            "target": "Package",
+            "version": "[3.1.0-preview3.19555.2, )"
           },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",

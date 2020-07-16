@@ -365,14 +365,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "BlazorShop.Pages.ProductPage",
+        "Name": "BlazorShop.Pages.AppointmentBooked",
         "AssemblyName": "BlazorShop",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProductPage",
+            "TagName": "AppointmentBooked",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -384,19 +384,19 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorShop.Pages.ProductPage"
+          "Common.TypeName": "BlazorShop.Pages.AppointmentBooked"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "BlazorShop.Pages.ProductPage",
+        "Name": "BlazorShop.Pages.AppointmentBooked",
         "AssemblyName": "BlazorShop",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorShop.Pages.ProductPage",
+            "TagName": "BlazorShop.Pages.AppointmentBooked",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -408,7 +408,7 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorShop.Pages.ProductPage",
+          "Common.TypeName": "BlazorShop.Pages.AppointmentBooked",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -458,6 +458,115 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorShop.Pages.CategoryPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.AppointmentComponent",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppointmentComponent",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "appointment",
+            "TypeName": "BlazorShop.Models.Appointment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "appointment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickShowDetails",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnClickShowDetails",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.AppointmentComponent"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.AppointmentComponent",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.Components.AppointmentComponent",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "appointment",
+            "TypeName": "BlazorShop.Models.Appointment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "appointment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickShowDetails",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnClickShowDetails",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.AppointmentComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -653,6 +762,194 @@
       },
       {
         "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.DetailsComponent",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DetailsComponent",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "appointment",
+            "TypeName": "BlazorShop.Models.Appointment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "appointment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickShowAppointment",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnClickShowAppointment",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.DetailsComponent"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.DetailsComponent",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.Components.DetailsComponent",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "appointment",
+            "TypeName": "BlazorShop.Models.Appointment",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "appointment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnClickShowAppointment",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "OnClickShowAppointment",
+              "Components.EventCallback": "True"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.DetailsComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.IndividualProduct",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IndividualProduct",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "product",
+            "TypeName": "BlazorShop.Models.Product",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "product"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.IndividualProduct"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Components.IndividualProduct",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.Components.IndividualProduct",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "product",
+            "TypeName": "BlazorShop.Models.Product",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "product"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Components.IndividualProduct",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "BlazorShop.Pages.Components.ParentComponent",
         "AssemblyName": "BlazorShop",
         "Documentation": null,
@@ -697,6 +994,85 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorShop.Pages.Components.ParentComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Details",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Details",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Details"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.Details",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.Details",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductId",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ProductId"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.Details",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -795,6 +1171,104 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorShop.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.ProductPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProductPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.ProductPage"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.ProductPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.ProductPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.ProductPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.AppointmentPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AppointmentPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.AppointmentPage"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorShop.Pages.AppointmentPage",
+        "AssemblyName": "BlazorShop",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorShop.Pages.AppointmentPage",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorShop.Pages.AppointmentPage",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -21836,6 +22310,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Components/IndividualProduct.razor",
+      "TargetPath": "Pages\\Components\\IndividualProduct.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
@@ -21858,6 +22337,16 @@
     {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/CategoryPage.razor",
       "TargetPath": "Pages\\CategoryPage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/AppointmentPage.razor",
+      "TargetPath": "Pages\\AppointmentPage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/AppointmentBooked.razor",
+      "TargetPath": "Pages\\AppointmentBooked.razor",
       "FileKind": "component"
     },
     {
@@ -21901,6 +22390,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Components/AppointmentComponent.razor",
+      "TargetPath": "Pages\\Components\\AppointmentComponent.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Components/ChildComponent.razor",
       "TargetPath": "Pages\\Components\\ChildComponent.razor",
       "FileKind": "component"
@@ -21926,8 +22420,18 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Details.razor",
+      "TargetPath": "Pages\\Details.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Learn Blazor/LearnRouting.razor",
       "TargetPath": "Pages\\Learn Blazor\\LearnRouting.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/cannonjw/Projects/BlazorShop/Pages/Components/DetailsComponent.razor",
+      "TargetPath": "Pages\\Components\\DetailsComponent.razor",
       "FileKind": "component"
     }
   ],
